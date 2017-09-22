@@ -110,8 +110,7 @@
 				CE048C941F39EE8F008256A0 /* AppDelegate.swift */,
 				CE048CBF1F39F35F008256A0 /* Managers */,
 				CE048C9B1F39EE8F008256A0 /* Assets.xcassets */,
-				CEBCBC991F754DD600B98884 /* rebelIcon.png */,
-				CEBCBC971F754CA400B98884 /* Boba-Fett-icon.png */,
+				CEBCBC9C1F754F7B00B98884 /* Assets */,
 				CE048CA01F39EE8F008256A0 /* Info.plist */,
 			);
 			path = SWAPI;
@@ -175,6 +174,15 @@
 				CE048CCC1F3A28F1008256A0 /* ShipTableViewCell.xib */,
 			);
 			name = xib;
+			sourceTree = "<group>";
+		};
+		CEBCBC9C1F754F7B00B98884 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				CEBCBC991F754DD600B98884 /* rebelIcon.png */,
+				CEBCBC971F754CA400B98884 /* Boba-Fett-icon.png */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
