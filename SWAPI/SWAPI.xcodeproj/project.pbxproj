@@ -24,6 +24,8 @@
 		CE048CCE1F3A28F1008256A0 /* ShipTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE048CCC1F3A28F1008256A0 /* ShipTableViewCell.xib */; };
 		CE048CD01F3A3235008256A0 /* ShipTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE048CCF1F3A3235008256A0 /* ShipTableViewController.swift */; };
 		CE048CD21F3A434F008256A0 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE048CD11F3A434F008256A0 /* DetailsViewController.swift */; };
+		CEBCBC981F754CA400B98884 /* Boba-Fett-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CEBCBC971F754CA400B98884 /* Boba-Fett-icon.png */; };
+		CEBCBC9A1F754DD600B98884 /* rebelIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = CEBCBC991F754DD600B98884 /* rebelIcon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		CE048CCC1F3A28F1008256A0 /* ShipTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShipTableViewCell.xib; sourceTree = "<group>"; };
 		CE048CCF1F3A3235008256A0 /* ShipTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShipTableViewController.swift; sourceTree = "<group>"; };
 		CE048CD11F3A434F008256A0 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		CEBCBC971F754CA400B98884 /* Boba-Fett-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Boba-Fett-icon.png"; sourceTree = "<group>"; };
+		CEBCBC991F754DD600B98884 /* rebelIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rebelIcon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,10 +108,10 @@
 				CE048CB71F39EF85008256A0 /* ViewModel */,
 				CE048CB61F39EED5008256A0 /* Model */,
 				CE048C941F39EE8F008256A0 /* AppDelegate.swift */,
-				CE048C981F39EE8F008256A0 /* Main.storyboard */,
 				CE048CBF1F39F35F008256A0 /* Managers */,
 				CE048C9B1F39EE8F008256A0 /* Assets.xcassets */,
-				CE048C9D1F39EE8F008256A0 /* LaunchScreen.storyboard */,
+				CEBCBC991F754DD600B98884 /* rebelIcon.png */,
+				CEBCBC971F754CA400B98884 /* Boba-Fett-icon.png */,
 				CE048CA01F39EE8F008256A0 /* Info.plist */,
 			);
 			path = SWAPI;
@@ -155,12 +159,22 @@
 		CE048CCA1F3A2831008256A0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CEBCBC9B1F754E1300B98884 /* xib */,
 				CE048CD11F3A434F008256A0 /* DetailsViewController.swift */,
 				CE048CCF1F3A3235008256A0 /* ShipTableViewController.swift */,
 				CE048CCB1F3A28F1008256A0 /* ShipTableViewCell.swift */,
-				CE048CCC1F3A28F1008256A0 /* ShipTableViewCell.xib */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		CEBCBC9B1F754E1300B98884 /* xib */ = {
+			isa = PBXGroup;
+			children = (
+				CE048C981F39EE8F008256A0 /* Main.storyboard */,
+				CE048C9D1F39EE8F008256A0 /* LaunchScreen.storyboard */,
+				CE048CCC1F3A28F1008256A0 /* ShipTableViewCell.xib */,
+			);
+			name = xib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,7 +262,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE048C9F1F39EE8F008256A0 /* LaunchScreen.storyboard in Resources */,
+				CEBCBC9A1F754DD600B98884 /* rebelIcon.png in Resources */,
 				CE048CCE1F3A28F1008256A0 /* ShipTableViewCell.xib in Resources */,
+				CEBCBC981F754CA400B98884 /* Boba-Fett-icon.png in Resources */,
 				CE048C9C1F39EE8F008256A0 /* Assets.xcassets in Resources */,
 				CE048C9A1F39EE8F008256A0 /* Main.storyboard in Resources */,
 			);
