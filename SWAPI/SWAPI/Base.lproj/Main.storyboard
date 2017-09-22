@@ -34,67 +34,12 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Ships" id="ASJ-3A-feN"/>
                     <connections>
-                        <segue destination="rGs-g9-hiU" kind="show" identifier="DetailSegue" id="UC7-UB-e3Q"/>
+                        <segue destination="Orb-ra-0TZ" kind="show" identifier="DetailSegue" id="UC7-UB-e3Q"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cs5-Zs-ZIx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1100" y="232.53373313343329"/>
-        </scene>
-        <!--Ship Data-->
-        <scene sceneID="C7h-an-JeT">
-            <objects>
-                <viewController id="rGs-g9-hiU" customClass="DetailsViewController" customModule="SWAPI" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="DKK-ae-Lgd"/>
-                        <viewControllerLayoutGuide type="bottom" id="aVa-dx-qX2"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="lDT-SH-ceS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9W3-pG-DSS">
-                                <rect key="frame" x="16" y="92" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVu-IY-v3K">
-                                <rect key="frame" x="16" y="134" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BXv-4r-SNU">
-                                <rect key="frame" x="16" y="176" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZF-pZ-bCX">
-                                <rect key="frame" x="16" y="214" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Ship Data" id="JRx-pe-5bY"/>
-                    <connections>
-                        <outlet property="Manufacter" destination="BXv-4r-SNU" id="y4L-uP-j2m"/>
-                        <outlet property="Model" destination="pVu-IY-v3K" id="QzD-tN-MFN"/>
-                        <outlet property="Name" destination="9W3-pG-DSS" id="pxf-6S-S2i"/>
-                        <outlet property="StarShipClass" destination="aZF-pZ-bCX" id="aZz-IO-njg"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Wf5-gG-akq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1864.8" y="232.53373313343329"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="m9l-FQ-VXa">
@@ -113,6 +58,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7TZ-Vf-XiV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="160.80000000000001" y="232.53373313343329"/>
+        </scene>
+        <!--ShipData-->
+        <scene sceneID="2Ct-CI-Oe7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ShipData" id="Orb-ra-0TZ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0O0-Rh-yfO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1864.8" y="232.53373313343329"/>
         </scene>
     </scenes>
 </document>

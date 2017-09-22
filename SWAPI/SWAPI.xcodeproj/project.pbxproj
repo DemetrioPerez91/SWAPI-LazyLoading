@@ -26,6 +26,7 @@
 		CE048CD21F3A434F008256A0 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE048CD11F3A434F008256A0 /* DetailsViewController.swift */; };
 		CEBCBC981F754CA400B98884 /* Boba-Fett-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CEBCBC971F754CA400B98884 /* Boba-Fett-icon.png */; };
 		CEBCBC9A1F754DD600B98884 /* rebelIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = CEBCBC991F754DD600B98884 /* rebelIcon.png */; };
+		CEBCBC9F1F75510300B98884 /* ShipData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBCBC9D1F75510300B98884 /* ShipData.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		CE048CD11F3A434F008256A0 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		CEBCBC971F754CA400B98884 /* Boba-Fett-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Boba-Fett-icon.png"; sourceTree = "<group>"; };
 		CEBCBC991F754DD600B98884 /* rebelIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rebelIcon.png; sourceTree = "<group>"; };
+		CEBCBC9E1F75510300B98884 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ShipData.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				CE048C981F39EE8F008256A0 /* Main.storyboard */,
+				CEBCBC9D1F75510300B98884 /* ShipData.storyboard */,
 				CE048C9D1F39EE8F008256A0 /* LaunchScreen.storyboard */,
 				CE048CCC1F3A28F1008256A0 /* ShipTableViewCell.xib */,
 			);
@@ -273,6 +276,7 @@
 				CEBCBC9A1F754DD600B98884 /* rebelIcon.png in Resources */,
 				CE048CCE1F3A28F1008256A0 /* ShipTableViewCell.xib in Resources */,
 				CEBCBC981F754CA400B98884 /* Boba-Fett-icon.png in Resources */,
+				CEBCBC9F1F75510300B98884 /* ShipData.storyboard in Resources */,
 				CE048C9C1F39EE8F008256A0 /* Assets.xcassets in Resources */,
 				CE048C9A1F39EE8F008256A0 /* Main.storyboard in Resources */,
 			);
@@ -340,6 +344,14 @@
 				CE048C9E1F39EE8F008256A0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CEBCBC9D1F75510300B98884 /* ShipData.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEBCBC9E1F75510300B98884 /* Base */,
+			);
+			name = ShipData.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
