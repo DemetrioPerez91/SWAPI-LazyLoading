@@ -13,6 +13,7 @@ class ShipVM: NSObject
     let ship:Ship
     init(ship:Ship){self.ship = ship}
     
+    var firebaseSearchName:String{get{return "\(ship.name)"}}
     var name:String{get{return "Name: \(ship.name)"}}
     var model:String{get {return "Model: \(ship.model)"}}
     var manufacturer:String{get{return "Manufacturer: \(ship.manufacturer)"}}
