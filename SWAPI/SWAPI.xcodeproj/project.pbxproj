@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE048C951F39EE8F008256A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE048C941F39EE8F008256A0 /* AppDelegate.swift */; };
+		CE048C9A1F39EE8F008256A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE048C981F39EE8F008256A0 /* Main.storyboard */; };
+		CE048C9C1F39EE8F008256A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE048C9B1F39EE8F008256A0 /* Assets.xcassets */; };
+		CE048C9F1F39EE8F008256A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE048C9D1F39EE8F008256A0 /* LaunchScreen.storyboard */; };
+		CE048CB51F39EECD008256A0 /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE048CB41F39EECD008256A0 /* Ship.swift */; };
+		CE048CB91F39EF9D008256A0 /* ShipVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE048CB81F39EF9D008256A0 /* ShipVM.swift */; };
+		CE048CBC1F39F004008256A0 /* ShipVMTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE048CBB1F39F004008256A0 /* ShipVMTestCase.swift */; };
+		CE048CBE1F39F35A008256A0 /* WebServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE048CBD1F39F35A008256A0 /* WebServiceManager.swift */; };
+		CE048CC11F39F41A008256A0 /* WebServiceManagerTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE048CC01F39F41A008256A0 /* WebServiceManagerTestCase.swift */; };
+		CE048CC31F39FBC2008256A0 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE048CC21F39FBC2008256A0 /* JSONParser.swift */; };
+		CE048CC51F39FC20008256A0 /* JSONParserTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE048CC41F39FC20008256A0 /* JSONParserTestCase.swift */; };
+		CE048CC71F3A0CE1008256A0 /* DataManagerTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE048CC61F3A0CE1008256A0 /* DataManagerTestCase.swift */; };
+		CE048CC91F3A0D00008256A0 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE048CC81F3A0D00008256A0 /* DataManager.swift */; };
+		CE048CCD1F3A28F1008256A0 /* ShipTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE048CCB1F3A28F1008256A0 /* ShipTableViewCell.swift */; };
+		CE048CCE1F3A28F1008256A0 /* ShipTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE048CCC1F3A28F1008256A0 /* ShipTableViewCell.xib */; };
+		CE048CD01F3A3235008256A0 /* ShipTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE048CCF1F3A3235008256A0 /* ShipTableViewController.swift */; };
+		CE048CD21F3A434F008256A0 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE048CD11F3A434F008256A0 /* DetailsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE048CA61F39EE8F008256A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE048C891F39EE8F008256A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE048C901F39EE8F008256A0;
+			remoteInfo = SWAPI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE048C911F39EE8F008256A0 /* SWAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE048C941F39EE8F008256A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE048C991F39EE8F008256A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE048C9B1F39EE8F008256A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE048C9E1F39EE8F008256A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE048CA01F39EE8F008256A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE048CA51F39EE8F008256A0 /* SWAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SWAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE048CAB1F39EE8F008256A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE048CB41F39EECD008256A0 /* Ship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ship.swift; sourceTree = "<group>"; };
+		CE048CB81F39EF9D008256A0 /* ShipVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShipVM.swift; sourceTree = "<group>"; };
+		CE048CBA1F39F004008256A0 /* SWAPITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "SWAPITests-Bridging-Header.h"; path = "../SWAPI/SWAPITests-Bridging-Header.h"; sourceTree = "<group>"; };
+		CE048CBB1F39F004008256A0 /* ShipVMTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShipVMTestCase.swift; path = ../SWAPI/ShipVMTestCase.swift; sourceTree = "<group>"; };
+		CE048CBD1F39F35A008256A0 /* WebServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceManager.swift; sourceTree = "<group>"; };
+		CE048CC01F39F41A008256A0 /* WebServiceManagerTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebServiceManagerTestCase.swift; path = ../SWAPI/WebServiceManagerTestCase.swift; sourceTree = "<group>"; };
+		CE048CC21F39FBC2008256A0 /* JSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
+		CE048CC41F39FC20008256A0 /* JSONParserTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONParserTestCase.swift; path = ../SWAPI/JSONParserTestCase.swift; sourceTree = "<group>"; };
+		CE048CC61F3A0CE1008256A0 /* DataManagerTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataManagerTestCase.swift; path = ../SWAPI/DataManagerTestCase.swift; sourceTree = "<group>"; };
+		CE048CC81F3A0D00008256A0 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		CE048CCB1F3A28F1008256A0 /* ShipTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShipTableViewCell.swift; sourceTree = "<group>"; };
+		CE048CCC1F3A28F1008256A0 /* ShipTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShipTableViewCell.xib; sourceTree = "<group>"; };
+		CE048CCF1F3A3235008256A0 /* ShipTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShipTableViewController.swift; sourceTree = "<group>"; };
+		CE048CD11F3A434F008256A0 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE048C8E1F39EE8F008256A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE048CA21F39EE8F008256A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE048C881F39EE8F008256A0 = {
+			isa = PBXGroup;
+			children = (
+				CE048C931F39EE8F008256A0 /* SWAPI */,
+				CE048CA81F39EE8F008256A0 /* SWAPITests */,
+				CE048C921F39EE8F008256A0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE048C921F39EE8F008256A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE048C911F39EE8F008256A0 /* SWAPI.app */,
+				CE048CA51F39EE8F008256A0 /* SWAPITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE048C931F39EE8F008256A0 /* SWAPI */ = {
+			isa = PBXGroup;
+			children = (
+				CE048CCA1F3A2831008256A0 /* View */,
+				CE048CB71F39EF85008256A0 /* ViewModel */,
+				CE048CB61F39EED5008256A0 /* Model */,
+				CE048C941F39EE8F008256A0 /* AppDelegate.swift */,
+				CE048C981F39EE8F008256A0 /* Main.storyboard */,
+				CE048CBF1F39F35F008256A0 /* Managers */,
+				CE048C9B1F39EE8F008256A0 /* Assets.xcassets */,
+				CE048C9D1F39EE8F008256A0 /* LaunchScreen.storyboard */,
+				CE048CA01F39EE8F008256A0 /* Info.plist */,
+			);
+			path = SWAPI;
+			sourceTree = "<group>";
+		};
+		CE048CA81F39EE8F008256A0 /* SWAPITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE048CC61F3A0CE1008256A0 /* DataManagerTestCase.swift */,
+				CE048CC41F39FC20008256A0 /* JSONParserTestCase.swift */,
+				CE048CC01F39F41A008256A0 /* WebServiceManagerTestCase.swift */,
+				CE048CBB1F39F004008256A0 /* ShipVMTestCase.swift */,
+				CE048CBA1F39F004008256A0 /* SWAPITests-Bridging-Header.h */,
+				CE048CAB1F39EE8F008256A0 /* Info.plist */,
+			);
+			path = SWAPITests;
+			sourceTree = "<group>";
+		};
+		CE048CB61F39EED5008256A0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE048CB41F39EECD008256A0 /* Ship.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CE048CB71F39EF85008256A0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE048CB81F39EF9D008256A0 /* ShipVM.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE048CBF1F39F35F008256A0 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				CE048CBD1F39F35A008256A0 /* WebServiceManager.swift */,
+				CE048CC21F39FBC2008256A0 /* JSONParser.swift */,
+				CE048CC81F3A0D00008256A0 /* DataManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		CE048CCA1F3A2831008256A0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE048CD11F3A434F008256A0 /* DetailsViewController.swift */,
+				CE048CCF1F3A3235008256A0 /* ShipTableViewController.swift */,
+				CE048CCB1F3A28F1008256A0 /* ShipTableViewCell.swift */,
+				CE048CCC1F3A28F1008256A0 /* ShipTableViewCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE048C901F39EE8F008256A0 /* SWAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE048CAE1F39EE8F008256A0 /* Build configuration list for PBXNativeTarget "SWAPI" */;
+			buildPhases = (
+				CE048C8D1F39EE8F008256A0 /* Sources */,
+				CE048C8E1F39EE8F008256A0 /* Frameworks */,
+				CE048C8F1F39EE8F008256A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SWAPI;
+			productName = SWAPI;
+			productReference = CE048C911F39EE8F008256A0 /* SWAPI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE048CA41F39EE8F008256A0 /* SWAPITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE048CB11F39EE8F008256A0 /* Build configuration list for PBXNativeTarget "SWAPITests" */;
+			buildPhases = (
+				CE048CA11F39EE8F008256A0 /* Sources */,
+				CE048CA21F39EE8F008256A0 /* Frameworks */,
+				CE048CA31F39EE8F008256A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE048CA71F39EE8F008256A0 /* PBXTargetDependency */,
+			);
+			name = SWAPITests;
+			productName = SWAPITests;
+			productReference = CE048CA51F39EE8F008256A0 /* SWAPITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE048C891F39EE8F008256A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Demetrio;
+				TargetAttributes = {
+					CE048C901F39EE8F008256A0 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
+					CE048CA41F39EE8F008256A0 = {
+						CreatedOnToolsVersion = 8.2;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CE048C901F39EE8F008256A0;
+					};
+				};
+			};
+			buildConfigurationList = CE048C8C1F39EE8F008256A0 /* Build configuration list for PBXProject "SWAPI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE048C881F39EE8F008256A0;
+			productRefGroup = CE048C921F39EE8F008256A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE048C901F39EE8F008256A0 /* SWAPI */,
+				CE048CA41F39EE8F008256A0 /* SWAPITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE048C8F1F39EE8F008256A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE048C9F1F39EE8F008256A0 /* LaunchScreen.storyboard in Resources */,
+				CE048CCE1F3A28F1008256A0 /* ShipTableViewCell.xib in Resources */,
+				CE048C9C1F39EE8F008256A0 /* Assets.xcassets in Resources */,
+				CE048C9A1F39EE8F008256A0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE048CA31F39EE8F008256A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE048C8D1F39EE8F008256A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE048CCD1F3A28F1008256A0 /* ShipTableViewCell.swift in Sources */,
+				CE048CBE1F39F35A008256A0 /* WebServiceManager.swift in Sources */,
+				CE048CD21F3A434F008256A0 /* DetailsViewController.swift in Sources */,
+				CE048CC91F3A0D00008256A0 /* DataManager.swift in Sources */,
+				CE048CD01F3A3235008256A0 /* ShipTableViewController.swift in Sources */,
+				CE048CC31F39FBC2008256A0 /* JSONParser.swift in Sources */,
+				CE048C951F39EE8F008256A0 /* AppDelegate.swift in Sources */,
+				CE048CB91F39EF9D008256A0 /* ShipVM.swift in Sources */,
+				CE048CB51F39EECD008256A0 /* Ship.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE048CA11F39EE8F008256A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE048CC11F39F41A008256A0 /* WebServiceManagerTestCase.swift in Sources */,
+				CE048CC71F3A0CE1008256A0 /* DataManagerTestCase.swift in Sources */,
+				CE048CBC1F39F004008256A0 /* ShipVMTestCase.swift in Sources */,
+				CE048CC51F39FC20008256A0 /* JSONParserTestCase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE048CA71F39EE8F008256A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE048C901F39EE8F008256A0 /* SWAPI */;
+			targetProxy = CE048CA61F39EE8F008256A0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE048C981F39EE8F008256A0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE048C991F39EE8F008256A0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE048C9D1F39EE8F008256A0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE048C9E1F39EE8F008256A0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE048CAC1F39EE8F008256A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE048CAD1F39EE8F008256A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE048CAF1F39EE8F008256A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SWAPI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Demetrio.SWAPI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CE048CB01F39EE8F008256A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SWAPI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Demetrio.SWAPI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		CE048CB21F39EE8F008256A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = SWAPITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Demetrio.SWAPITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SWAPI/SWAPITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SWAPI.app/SWAPI";
+			};
+			name = Debug;
+		};
+		CE048CB31F39EE8F008256A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = SWAPITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Demetrio.SWAPITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SWAPI/SWAPITests-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SWAPI.app/SWAPI";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE048C8C1F39EE8F008256A0 /* Build configuration list for PBXProject "SWAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE048CAC1F39EE8F008256A0 /* Debug */,
+				CE048CAD1F39EE8F008256A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE048CAE1F39EE8F008256A0 /* Build configuration list for PBXNativeTarget "SWAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE048CAF1F39EE8F008256A0 /* Debug */,
+				CE048CB01F39EE8F008256A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE048CB11F39EE8F008256A0 /* Build configuration list for PBXNativeTarget "SWAPITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE048CB21F39EE8F008256A0 /* Debug */,
+				CE048CB31F39EE8F008256A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE048C891F39EE8F008256A0 /* Project object */;
+}
