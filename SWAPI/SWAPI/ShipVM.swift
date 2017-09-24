@@ -18,5 +18,6 @@ class ShipVM: NSObject
     var model:String{get {return "Model: \(ship.model)"}}
     var manufacturer:String{get{return "Manufacturer: \(ship.manufacturer)"}}
     var starshipClass:String{get{return "Class: \(ship.starshipClass)"}}
+    var shipImageURL:String{get{return "https://raw.githubusercontent.com/DemetrioPerez91/SWAPI-Image-Gallery/master/Calamari%20Cruiser.jpg"}}
     
 }
