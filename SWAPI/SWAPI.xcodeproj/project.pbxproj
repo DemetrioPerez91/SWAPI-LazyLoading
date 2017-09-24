@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4AFC30E8C60F67C5E1AD26E0 /* Pods_SWAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CC86B207F8699CA872AFA91 /* Pods_SWAPI.framework */; };
 		CE048C951F39EE8F008256A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE048C941F39EE8F008256A0 /* AppDelegate.swift */; };
 		CE048C9A1F39EE8F008256A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE048C981F39EE8F008256A0 /* Main.storyboard */; };
 		CE048C9C1F39EE8F008256A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE048C9B1F39EE8F008256A0 /* Assets.xcassets */; };
@@ -28,8 +27,6 @@
 		CEBCBC981F754CA400B98884 /* Boba-Fett-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CEBCBC971F754CA400B98884 /* Boba-Fett-icon.png */; };
 		CEBCBC9A1F754DD600B98884 /* rebelIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = CEBCBC991F754DD600B98884 /* rebelIcon.png */; };
 		CEBCBC9F1F75510300B98884 /* ShipData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBCBC9D1F75510300B98884 /* ShipData.storyboard */; };
-		CEBCBCA11F75597900B98884 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEBCBCA01F75597900B98884 /* GoogleService-Info.plist */; };
-		E6938C404626696236B6D9D5 /* Pods_SWAPITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 373B9686C3C20CCB44B8936F /* Pods_SWAPITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,12 +40,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0CC86B207F8699CA872AFA91 /* Pods_SWAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		373B9686C3C20CCB44B8936F /* Pods_SWAPITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWAPITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3E941FD2AEFC60CBE84E3CD7 /* Pods-SWAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWAPI.release.xcconfig"; path = "Pods/Target Support Files/Pods-SWAPI/Pods-SWAPI.release.xcconfig"; sourceTree = "<group>"; };
-		896C35A7F6F29F9510F93A18 /* Pods-SWAPITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWAPITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SWAPITests/Pods-SWAPITests.debug.xcconfig"; sourceTree = "<group>"; };
-		97EFC1715A5BCC7E8EAC6B82 /* Pods-SWAPITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWAPITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SWAPITests/Pods-SWAPITests.release.xcconfig"; sourceTree = "<group>"; };
-		C63743BF3870AE83A7103248 /* Pods-SWAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWAPI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SWAPI/Pods-SWAPI.debug.xcconfig"; sourceTree = "<group>"; };
 		CE048C911F39EE8F008256A0 /* SWAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE048C941F39EE8F008256A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE048C991F39EE8F008256A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -74,7 +65,6 @@
 		CEBCBC971F754CA400B98884 /* Boba-Fett-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Boba-Fett-icon.png"; sourceTree = "<group>"; };
 		CEBCBC991F754DD600B98884 /* rebelIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rebelIcon.png; sourceTree = "<group>"; };
 		CEBCBC9E1F75510300B98884 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ShipData.storyboard; sourceTree = "<group>"; };
-		CEBCBCA01F75597900B98884 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +72,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AFC30E8C60F67C5E1AD26E0 /* Pods_SWAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,31 +79,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6938C404626696236B6D9D5 /* Pods_SWAPITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A4AAFA845EF8E9EC6C1D1EB3 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				C63743BF3870AE83A7103248 /* Pods-SWAPI.debug.xcconfig */,
-				3E941FD2AEFC60CBE84E3CD7 /* Pods-SWAPI.release.xcconfig */,
-				896C35A7F6F29F9510F93A18 /* Pods-SWAPITests.debug.xcconfig */,
-				97EFC1715A5BCC7E8EAC6B82 /* Pods-SWAPITests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		CE048C881F39EE8F008256A0 = {
 			isa = PBXGroup;
 			children = (
 				CE048C931F39EE8F008256A0 /* SWAPI */,
 				CE048CA81F39EE8F008256A0 /* SWAPITests */,
 				CE048C921F39EE8F008256A0 /* Products */,
-				A4AAFA845EF8E9EC6C1D1EB3 /* Pods */,
 				D5B1820F3FB24E8CAEC83959 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -216,7 +192,6 @@
 		CEBCBCA21F75598600B98884 /* plists */ = {
 			isa = PBXGroup;
 			children = (
-				CEBCBCA01F75597900B98884 /* GoogleService-Info.plist */,
 				CE048CA01F39EE8F008256A0 /* Info.plist */,
 			);
 			name = plists;
@@ -225,8 +200,6 @@
 		D5B1820F3FB24E8CAEC83959 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0CC86B207F8699CA872AFA91 /* Pods_SWAPI.framework */,
-				373B9686C3C20CCB44B8936F /* Pods_SWAPITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -238,12 +211,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE048CAE1F39EE8F008256A0 /* Build configuration list for PBXNativeTarget "SWAPI" */;
 			buildPhases = (
-				89769B1732725FD2C831297E /* [CP] Check Pods Manifest.lock */,
 				CE048C8D1F39EE8F008256A0 /* Sources */,
 				CE048C8E1F39EE8F008256A0 /* Frameworks */,
 				CE048C8F1F39EE8F008256A0 /* Resources */,
-				4A9718D4330B0DB476213D49 /* [CP] Embed Pods Frameworks */,
-				AC9A3AEC0800F4991522E27B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -322,7 +292,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE048C9F1F39EE8F008256A0 /* LaunchScreen.storyboard in Resources */,
-				CEBCBCA11F75597900B98884 /* GoogleService-Info.plist in Resources */,
 				CEBCBC9A1F754DD600B98884 /* rebelIcon.png in Resources */,
 				CE048CCE1F3A28F1008256A0 /* ShipTableViewCell.xib in Resources */,
 				CEBCBC981F754CA400B98884 /* Boba-Fett-icon.png in Resources */,
@@ -357,21 +326,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SWAPITests/Pods-SWAPITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4A9718D4330B0DB476213D49 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SWAPI/Pods-SWAPI-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		6C7496E9A174C52FC9156470 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -387,21 +341,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SWAPITests/Pods-SWAPITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		89769B1732725FD2C831297E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
 		9BD11F509698A677D6C92476 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -415,21 +354,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		AC9A3AEC0800F4991522E27B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SWAPI/Pods-SWAPI-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -595,7 +519,6 @@
 		};
 		CE048CAF1F39EE8F008256A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C63743BF3870AE83A7103248 /* Pods-SWAPI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SWAPI/Info.plist;
@@ -608,7 +531,6 @@
 		};
 		CE048CB01F39EE8F008256A0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3E941FD2AEFC60CBE84E3CD7 /* Pods-SWAPI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SWAPI/Info.plist;
@@ -621,7 +543,6 @@
 		};
 		CE048CB21F39EE8F008256A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 896C35A7F6F29F9510F93A18 /* Pods-SWAPITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -639,7 +560,6 @@
 		};
 		CE048CB31F39EE8F008256A0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 97EFC1715A5BCC7E8EAC6B82 /* Pods-SWAPITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

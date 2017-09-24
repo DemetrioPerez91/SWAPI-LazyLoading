@@ -39,4 +39,8 @@ class WebServiceManagerTestCase: XCTestCase {
         })
     }
     
+    func testGetImage()
+    {
+    }
+    
 }

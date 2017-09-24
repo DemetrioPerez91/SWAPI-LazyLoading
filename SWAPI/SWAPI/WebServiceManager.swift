@@ -14,9 +14,11 @@ class WebServiceManager: NSObject
     static let instance = WebServiceManager()
     private let config = URLSessionConfiguration.default
     override private init(){}
+    
+    
     let testURL = "https://swapi.co/api/starships/?page=1&format=json"
     
-    
+
     func getInfo(url:String,completion:@escaping([String:AnyObject]?)->())
     {
         let session = URLSession(configuration: config)
@@ -45,6 +47,8 @@ class WebServiceManager: NSObject
         task.resume()
         
     }
+    
+    
   
 }
 
