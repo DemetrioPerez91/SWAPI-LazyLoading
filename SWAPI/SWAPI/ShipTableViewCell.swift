@@ -9,7 +9,8 @@
 import UIKit
 
 class ShipTableViewCell: UITableViewCell {
-
+    
+    @IBOutlet weak var shipImage: UIImageView!
     @IBOutlet weak var shipName: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -20,6 +21,13 @@ class ShipTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    func setImage(url1:String,url2:String)
+    {
+        DispatchQueue.global().async {
+            
+            ImageFetcher.instance.getImage(imageView: self.shipImage, url1: url1, url2: url2)
+        }
     }
     
 }

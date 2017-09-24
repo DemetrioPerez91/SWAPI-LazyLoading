@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -19,23 +20,33 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GFj-wI-D7k">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="84.5"/>
+                        <rect key="frame" x="80" y="0.0" width="0.0" height="84.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Boba-Fett-icon" translatesAutoresizingMaskIntoConstraints="NO" id="XuP-AQ-eHi">
+                        <rect key="frame" x="0.0" y="10.5" width="80" height="63.5"/>
+                    </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="GFj-wI-D7k" secondAttribute="trailing" id="3JG-wi-aCm"/>
-                    <constraint firstItem="GFj-wI-D7k" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="NrW-rx-daU"/>
-                    <constraint firstItem="GFj-wI-D7k" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="cgb-BL-Mrj"/>
-                    <constraint firstAttribute="bottom" secondItem="GFj-wI-D7k" secondAttribute="bottom" id="gHH-PB-jhr"/>
+                    <constraint firstItem="XuP-AQ-eHi" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="9Mu-hD-0gK"/>
+                    <constraint firstItem="XuP-AQ-eHi" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.25" id="I6N-pR-eQ5"/>
+                    <constraint firstItem="GFj-wI-D7k" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" id="R8E-fV-t7K"/>
+                    <constraint firstItem="XuP-AQ-eHi" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.75" id="ZS9-E5-HZd"/>
+                    <constraint firstItem="XuP-AQ-eHi" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="0.25" id="dmL-m9-u5U"/>
+                    <constraint firstItem="GFj-wI-D7k" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="gCt-ac-Sww"/>
+                    <constraint firstItem="GFj-wI-D7k" firstAttribute="leading" secondItem="XuP-AQ-eHi" secondAttribute="trailing" id="xS7-7m-0Md"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="shipImage" destination="XuP-AQ-eHi" id="vVG-9d-KQY"/>
                 <outlet property="shipName" destination="GFj-wI-D7k" id="mMu-Tt-0wK"/>
             </connections>
             <point key="canvasLocation" x="34" y="105.5"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="Boba-Fett-icon" width="72" height="72"/>
+    </resources>
 </document>
