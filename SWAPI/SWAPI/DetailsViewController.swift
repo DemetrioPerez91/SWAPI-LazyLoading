@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailsViewController: UIViewController {
+class DetailsViewController: UIViewController{
 
     @IBOutlet weak var Name: UILabel!
     @IBOutlet weak var Model: UILabel!
@@ -23,41 +23,12 @@ class DetailsViewController: UIViewController {
         Model.text = ship?.model
         Manufacter.text = ship?.manufacturer
         StarShipClass.text = ship?.starshipClass
-        
-        getImage()
-    }
-
-    func getImage()
-    {
-        
-        WebServiceManager.instance.getImage(url: (ship?.shipImageURLPNG)!, completion:
-            {
-                result  in
-                if let img = result
-                {
-                    self.updateImage(image: img)
-                }
-                else
-                {
-                    WebServiceManager.instance.getImage(url: (self.ship?.shipImageURLJPG)!, completion:
-                    {
-                        result in
-                        if let img = result
-                        {
-                            self.updateImage(image: img)
-                        }
-                    })
-                }
-        })
+        ImageFetcher.instance.getImage(imageView: shipImage, url1: (ship?.shipImageURLPNG)!, url2: (ship?.shipImageURLJPG)!)
     }
     
-    func updateImage(image:UIImage)
-    {
-        DispatchQueue.main.async
-        {
-                self.shipImage.image = image
-        }
-    }
+    
+    
+   
 
 
 

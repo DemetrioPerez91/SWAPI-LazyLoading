@@ -45,7 +45,9 @@ class ShipTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CellID", for: indexPath) as! ShipTableViewCell
-        cell.shipName?.text = DataManager.instance.ships[indexPath.row].name
+        let ship = DataManager.instance.ships[indexPath.row]
+        cell.shipName?.text = ship.name
+        cell.setImage(url1: ship.shipImageURLPNG, url2: ship.shipImageURLPNG)
         return cell
         
     }

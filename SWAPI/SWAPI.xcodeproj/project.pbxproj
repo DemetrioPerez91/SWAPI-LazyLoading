@@ -24,6 +24,7 @@
 		CE048CCE1F3A28F1008256A0 /* ShipTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE048CCC1F3A28F1008256A0 /* ShipTableViewCell.xib */; };
 		CE048CD01F3A3235008256A0 /* ShipTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE048CCF1F3A3235008256A0 /* ShipTableViewController.swift */; };
 		CE048CD21F3A434F008256A0 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE048CD11F3A434F008256A0 /* DetailsViewController.swift */; };
+		CE6FA2AC1F785B6600BF984D /* ImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6FA2AB1F785B6600BF984D /* ImageFetcher.swift */; };
 		CEBCBC981F754CA400B98884 /* Boba-Fett-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CEBCBC971F754CA400B98884 /* Boba-Fett-icon.png */; };
 		CEBCBC9A1F754DD600B98884 /* rebelIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = CEBCBC991F754DD600B98884 /* rebelIcon.png */; };
 		CEBCBC9F1F75510300B98884 /* ShipData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBCBC9D1F75510300B98884 /* ShipData.storyboard */; };
@@ -62,6 +63,7 @@
 		CE048CCC1F3A28F1008256A0 /* ShipTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShipTableViewCell.xib; sourceTree = "<group>"; };
 		CE048CCF1F3A3235008256A0 /* ShipTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShipTableViewController.swift; sourceTree = "<group>"; };
 		CE048CD11F3A434F008256A0 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		CE6FA2AB1F785B6600BF984D /* ImageFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFetcher.swift; sourceTree = "<group>"; };
 		CEBCBC971F754CA400B98884 /* Boba-Fett-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Boba-Fett-icon.png"; sourceTree = "<group>"; };
 		CEBCBC991F754DD600B98884 /* rebelIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rebelIcon.png; sourceTree = "<group>"; };
 		CEBCBC9E1F75510300B98884 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ShipData.storyboard; sourceTree = "<group>"; };
@@ -111,7 +113,8 @@
 				CE048CB71F39EF85008256A0 /* ViewModel */,
 				CE048CB61F39EED5008256A0 /* Model */,
 				CE048C941F39EE8F008256A0 /* AppDelegate.swift */,
-				CE048CBF1F39F35F008256A0 /* Managers */,
+				CE048CBF1F39F35F008256A0 /* Singleton */,
+				CE6FA2AD1F785BEF00BF984D /* Util */,
 				CE048C9B1F39EE8F008256A0 /* Assets.xcassets */,
 				CEBCBCA21F75598600B98884 /* plists */,
 				CEBCBC9C1F754F7B00B98884 /* Assets */,
@@ -148,14 +151,15 @@
 			name = ViewModel;
 			sourceTree = "<group>";
 		};
-		CE048CBF1F39F35F008256A0 /* Managers */ = {
+		CE048CBF1F39F35F008256A0 /* Singleton */ = {
 			isa = PBXGroup;
 			children = (
+				CE6FA2AB1F785B6600BF984D /* ImageFetcher.swift */,
 				CE048CBD1F39F35A008256A0 /* WebServiceManager.swift */,
 				CE048CC21F39FBC2008256A0 /* JSONParser.swift */,
 				CE048CC81F3A0D00008256A0 /* DataManager.swift */,
 			);
-			name = Managers;
+			name = Singleton;
 			sourceTree = "<group>";
 		};
 		CE048CCA1F3A2831008256A0 /* View */ = {
@@ -167,6 +171,13 @@
 				CE048CCB1F3A28F1008256A0 /* ShipTableViewCell.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		CE6FA2AD1F785BEF00BF984D /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 		CEBCBC9B1F754E1300B98884 /* xib */ = {
@@ -317,6 +328,7 @@
 				CE048CD21F3A434F008256A0 /* DetailsViewController.swift in Sources */,
 				CE048CC91F3A0D00008256A0 /* DataManager.swift in Sources */,
 				CE048CD01F3A3235008256A0 /* ShipTableViewController.swift in Sources */,
+				CE6FA2AC1F785B6600BF984D /* ImageFetcher.swift in Sources */,
 				CE048CC31F39FBC2008256A0 /* JSONParser.swift in Sources */,
 				CE048C951F39EE8F008256A0 /* AppDelegate.swift in Sources */,
 				CE048CB91F39EF9D008256A0 /* ShipVM.swift in Sources */,
