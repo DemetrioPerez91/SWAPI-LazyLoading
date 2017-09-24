@@ -29,17 +29,34 @@ class DetailsViewController: UIViewController {
 
     func getImage()
     {
-        WebServiceManager.instance.getImage(url: (ship?.shipImageURL)!, completion:
+        
+        WebServiceManager.instance.getImage(url: (ship?.shipImageURLPNG)!, completion:
             {
-                image  in
-                DispatchQueue.main.async
+                result  in
+                if let img = result
                 {
-                    if let img = image
+                    self.updateImage(image: img)
+                }
+                else
+                {
+                    WebServiceManager.instance.getImage(url: (self.ship?.shipImageURLJPG)!, completion:
                     {
-                        self.shipImage.image = img
-                    }
+                        result in
+                        if let img = result
+                        {
+                            self.updateImage(image: img)
+                        }
+                    })
                 }
         })
+    }
+    
+    func updateImage(image:UIImage)
+    {
+        DispatchQueue.main.async
+        {
+                self.shipImage.image = image
+        }
     }
 
 

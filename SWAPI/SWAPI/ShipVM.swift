@@ -18,6 +18,16 @@ class ShipVM: NSObject
     var model:String{get {return "Model: \(ship.model)"}}
     var manufacturer:String{get{return "Manufacturer: \(ship.manufacturer)"}}
     var starshipClass:String{get{return "Class: \(ship.starshipClass)"}}
-    var shipImageURL:String{get{return "https://raw.githubusercontent.com/DemetrioPerez91/SWAPI-Image-Gallery/master/Calamari%20Cruiser.jpg"}}
+    var shipImageURLPNG:String{get{return "https://raw.githubusercontent.com/DemetrioPerez91/SWAPI-Image-Gallery/master/\(shipNameAdapter).png"}}
+    var shipImageURLJPG:String{get{return "https://raw.githubusercontent.com/DemetrioPerez91/SWAPI-Image-Gallery/master/\(shipNameAdapter).jpg"}}
+    
+    var shipNameAdapter:String
+        {
+        get {
+            var name = ship.name
+            name = name.replacingOccurrences(of: " ", with: "%20")
+            return name
+        }
+    }
     
 }

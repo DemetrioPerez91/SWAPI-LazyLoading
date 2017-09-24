@@ -1,4 +1,5 @@
 
+
 //
 //  WebServiceManager.swift
 //  SWAPI
@@ -51,7 +52,11 @@ class WebServiceManager: NSObject
     func getImage( url:String,completion:@escaping (UIImage?)->())
     {
         let session = URLSession(configuration: config)
-        let request = URLRequest(url: URL(string: url)!)
+        guard let url = URL(string: url)else{
+            completion(nil)
+            return
+        }
+        let request = URLRequest(url: url)
         let task = session.dataTask(with: request, completionHandler: {
             data,response,error in
             guard let imageData = data
