@@ -41,6 +41,24 @@ class WebServiceManagerTestCase: XCTestCase {
     
     func testGetImage()
     {
+        var image:UIImage?
+        let expectJSON = expectation(description: "Wait for Image")
+        let imageURL = "https://raw.githubusercontent.com/DemetrioPerez91/SWAPI-Image-Gallery/master/Calamari%20Cruiser.jpg"
+        WebServiceManager.instance.getImage(url:imageURL, completion:
+        {
+            response in
+            image = response
+            expectJSON.fulfill()
+            
+        })
+        
+        waitForExpectations(timeout: 20, handler: {
+            _ in
+            
+            XCTAssertNotNil(image)
+            
+        })
+        
     }
     
 }

@@ -48,6 +48,32 @@ class WebServiceManager: NSObject
         
     }
     
+    func getImage( url:String,completion:@escaping (UIImage?)->())
+    {
+        let session = URLSession(configuration: config)
+        let request = URLRequest(url: URL(string: url)!)
+        let task = session.dataTask(with: request, completionHandler: {
+            data,response,error in
+            guard let imageData = data
+            else{
+                completion(nil)
+                return
+            }
+           
+            if let image = UIImage(data: imageData)
+            {
+                completion(image)
+            }
+            else
+            {
+                completion(nil)
+            }
+            
+        })
+        task.resume()
+        
+    }
+    
     
   
 }
