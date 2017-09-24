@@ -110,6 +110,7 @@
                         <outlet property="Model" destination="pVu-IY-v3K" id="QzD-tN-MFN"/>
                         <outlet property="Name" destination="9W3-pG-DSS" id="pxf-6S-S2i"/>
                         <outlet property="StarShipClass" destination="aZF-pZ-bCX" id="aZz-IO-njg"/>
+                        <outlet property="shipImage" destination="tZ9-Je-KEr" id="9ak-0A-dcC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wf5-gG-akq" userLabel="First Responder" sceneMemberID="firstResponder"/>

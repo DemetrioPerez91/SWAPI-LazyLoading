@@ -14,6 +14,7 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var Model: UILabel!
     @IBOutlet weak var Manufacter: UILabel!
     @IBOutlet weak var StarShipClass: UILabel!
+    @IBOutlet weak var shipImage: UIImageView!
     var ship:ShipVM?
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,8 +24,23 @@ class DetailsViewController: UIViewController {
         Manufacter.text = ship?.manufacturer
         StarShipClass.text = ship?.starshipClass
         
+        getImage()
     }
 
+    func getImage()
+    {
+        WebServiceManager.instance.getImage(url: (ship?.shipImageURL)!, completion:
+            {
+                image  in
+                DispatchQueue.main.async
+                {
+                    if let img = image
+                    {
+                        self.shipImage.image = img
+                    }
+                }
+        })
+    }
 
 
 
