@@ -14,6 +14,7 @@ class DataManager: NSObject
     override private init(){}
     var nextPage = ""
     var ships:[ShipVM]=[]
+    //var imageCache:Dictionary=[Int:UIImage]()
     
     
 

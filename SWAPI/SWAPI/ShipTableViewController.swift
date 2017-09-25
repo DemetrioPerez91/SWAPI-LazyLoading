@@ -47,11 +47,14 @@ class ShipTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CellID", for: indexPath) as! ShipTableViewCell
         let ship = DataManager.instance.ships[indexPath.row]
         cell.shipName?.text = ship.name
-        cell.setImage(url1: ship.shipImageURLPNG, url2: ship.shipImageURLPNG)
+       
+        cell.setImage(url1: ship.shipImageURLPNG, url2: ship.shipImageURLJPG)
+        
         return cell
         
     }
     
+   
     
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         if indexPath.item == (DataManager.instance.ships.count-1) {
@@ -75,8 +78,11 @@ class ShipTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        selectedShip = DataManager.instance.ships[indexPath.row]
-        performSegue(withIdentifier: "DetailSegue", sender: nil)
+        //selectedShip = DataManager.instance.ships[indexPath.row]
+        //performSegue(withIdentifier: "DetailSegue", sender: nil)
+        
+        let indexPath = IndexPath(item: indexPath.row, section: 0)
+        tableView.reloadRows(at: [indexPath], with: .top)
     }
     
     

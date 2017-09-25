@@ -19,6 +19,7 @@ class ImageFetcher{
                 result  in
                 if let img = result
                 {
+                    
                     self.updateImage(imageView: imageView, IMG: img)
                 }
                 else
@@ -28,7 +29,13 @@ class ImageFetcher{
                             result in
                             if let img = result
                             {
+                                
                                 self.updateImage(imageView: imageView, IMG: img)
+                            }
+                            else
+                            {
+                                
+                                 self.updateImage(imageView: imageView, IMG: #imageLiteral(resourceName: "Boba-Fett-icon"))
                             }
                     })
                 }
