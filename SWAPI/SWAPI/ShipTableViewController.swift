@@ -77,12 +77,8 @@ class ShipTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        //selectedShip = DataManager.instance.ships[indexPath.row]
-        //performSegue(withIdentifier: "DetailSegue", sender: nil)
-        
-        let indexPath = IndexPath(item: indexPath.row, section: 0)
-        tableView.reloadRows(at: [indexPath], with: .top)
+        selectedShip = DataManager.instance.ships[indexPath.row]
+        performSegue(withIdentifier: "DetailSegue", sender: nil)
     }
     
     
